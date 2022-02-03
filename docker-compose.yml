@@ -1,0 +1,31 @@
+version: "2.3"
+services:
+  analysis:
+    image: node:12.22.7-alpine
+    ports:
+      - 8080:8080
+    volumes:
+      - sqlite_db:/opt/DataBase/
+      - .:/cloud_project
+    working_dir: /cloud_project
+    restart: "always"
+    network_mode: "bridge"
+    command: "sh -c 'npm install && node index.js'"
+  centeral:
+    image: node:12.22.7-alpine
+    ports:
+      - 8081:8080
+    volumes:
+      - sqlite_db:/opt/DataBase/
+      - .:/cloud_project
+    working_dir: /cloud_project
+    restart: "always"
+    network_mode: "bridge"
+    command: "sh -c 'npm install && node index.js'"
+volumes:
+  sqlite_db:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/somayehnikkhou/cloud_project/DataBase
+      o: bind

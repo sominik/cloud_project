@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "a75d19e4-384d-43ad-8680-865c1349bee7",
+		"name": "Cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CentralService",
+			"item": [
+				{
+					"name": "getGameByRank",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "ali_925661219_0adc2d47-d9ec-45ff-8ff9-b911d2d47edb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rank\": \"100\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/game/getGameByRank",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"game",
+								"getGameByRank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getGameByName",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "ali_925661219_0adc2d47-d9ec-45ff-8ff9-b911d2d47edb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Mario\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/game/getGameByName",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"game",
+								"getGameByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBestGamesOfPlatform",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "ali_925661219_0adc2d47-d9ec-45ff-8ff9-b911d2d47edb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"platform\": \"PC\",\r\n    \"count\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/game/getBestGamesOfPlatform",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"game",
+								"getBestGamesOfPlatform"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBestGamesOfYear",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "ali_925661219_0adc2d47-d9ec-45ff-8ff9-b911d2d47edb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"year\": 2010,\r\n    \"count\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/game/getBestGamesOfYear",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"game",
+								"getBestGamesOfYear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBestGamesByGenre",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "ali_925661219_0adc2d47-d9ec-45ff-8ff9-b911d2d47edb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"genre\": \"Puzzle\",\r\n    \"count\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/game/getBestGamesByGenre",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"game",
+								"getBestGamesByGenre"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBestSellersGame",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "ali_925661219_0adc2d47-d9ec-45ff-8ff9-b911d2d47edb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"platform\": \"Wii\",\r\n    \"year\": 2008\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/game/getBestSellersGame",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"game",
+								"getBestSellersGame"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPopularGameOfEU",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "ali_925661219_0adc2d47-d9ec-45ff-8ff9-b911d2d47edb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"year\": 2012\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/game/getPopularGameOfEU",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"game",
+								"getPopularGameOfEU"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AnalysisService",
+			"item": [
+				{
+					"name": "compareSalesOf2Games",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"game1Name\": \"Wii Sports\",\r\n    \"game2Name\": \"Tetris\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/analysis/compareSalesOf2Games",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"analysis",
+								"compareSalesOf2Games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "compareTotalSalesOverAPeriod",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startYear\": 2008,\r\n    \"endYear\": 2012\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/analysis/compareTotalSalesOverAPeriod",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"analysis",
+								"compareTotalSalesOverAPeriod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "compareSalesOf2PublisherOverAPeriod",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startYear\": 2000,\r\n    \"endYear\": 2019,\r\n    \"publisher1\": \"Nintendo\",\r\n    \"publisher2\": \"Take-Two Interactive\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/analysis/compareSalesOf2PublisherOverAPeriod",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"analysis",
+								"compareSalesOf2PublisherOverAPeriod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "compareSalesOfAllGenresOverAPeriod",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startYear\": \"2001\",\r\n    \"endYear\": \"2005\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/analysis/compareSalesOfAllGenresOverAPeriod",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"analysis",
+								"compareSalesOfAllGenresOverAPeriod"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
